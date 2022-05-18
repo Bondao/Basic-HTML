@@ -1,0 +1,9 @@
+.eventDescription {
+  font-family: fantasy;
+}
+
+
+#selection {
+  display: flex;
+  justify-content: flex-start;
+}

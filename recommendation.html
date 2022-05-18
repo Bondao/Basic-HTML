@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="recommendation.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <div title=Top_Section> <!-- 1 -->
+      <a href="index.html">
+        <h1 id="logo" title=logo>EventMaster</h1> <!-- 2 -->
+      </a>
+    </div>
+  </header>
+  <section>
+    
+    <img id="eventImage" src="" alt="No imagesource found">
+    <p id="eventDescription">Empty</p>
+    
+    <input type="date" name="date" id="dateinput">
+    <select id="tickets">
+      <option value="0" hidden="">Tickets</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    <button>Add to basket</button>
+    <button onclick="buyTickets()">Buy now</button>
+  </section>
+  <p id="orderConfirmation" >Nothing</p>
+  <script src="recommendation.js"></script>
+</body>
+</html>

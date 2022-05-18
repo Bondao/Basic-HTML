@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div title=Top_Section> <!-- 1 -->
+        <h1 id="logo" title=logo>EventMaster</h1> <!-- 2 -->  
+    </div>
+  </header>
+  <nav> <!-- 3 -->
+    <div id="selection"> 
+        <select title=location> <!-- 4 -->
+          <<option hidden="">Choose Location</option>
+          <option>Hamburg</option>
+          <option>Berlin</option>
+          <option>Munich</option>
+        </select>
+        <select title=category> <!-- 5 -->
+          <option hidden="">Choose event type</option>
+          <option>Concerts</option>
+          <option>Sport</option>
+          <option>Musicals & Shows</option>
+          <option>Comedy</option>
+          <option>Culture</option>
+        </select>
+      <input title=search type="search" placeholder="Search for artists and events"><!-- 6 -->
+      <button  onclick="removeSelection()">Search</button>
+    </div>
+  </nav>
+    <section title=recommendations> <!-- 7 -->
+      <h2>Recommendations</h2> <!--8 -->
+      <ul id="recommendationList">
+        <li>
+          <div onclick="openRecommendation('harbour_cruise','description_1')"> <!-- 9-->
+            <h4>Harbour Cruise</h4> <!-- 10 -->
+              <img src="images/harbour_cruise.jpg" alt="Hafenrundfahrt"> <!-- 11 -->
+              <p id="description_1" class="eventDescription">Enjoy a nice harbour cruise!</p>
+          </div>
+          
+        </li> 
+        <li>
+          
+          <div onclick="openRecommendation('lionking', 'description_2')"> <!-- 12 -->
+            <h4>Lionking</h4> 
+            <img src="images/lionking.jpg" alt="Lionking">
+            <p id="description_2" class="eventDescription">Go to a musical.</p>
+          </div>
+          
+        </li>  
+        <li>
+          <div onclick="openRecommendation('the_weeknd', 'description_3')"> <!-- 13 -->
+            <h4>The Weeknd</h4> 
+            <img src="images/the_weeknd.jpg" alt="The Weeknd">
+            <p id="description_3" class="eventDescription">Listen to his breathtaking music!</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  
+  <script src="index.js"></script> <!-- reference to the JavaScript file -->
+</body>
+
+</html>
